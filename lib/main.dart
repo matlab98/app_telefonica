@@ -4,9 +4,10 @@ import 'package:adobe_xd/page_link.dart';
 import './login_business.dart';
 import './login_people.dart';
 import './menu_inicial.dart';
+void main() => runApp(myApp());
 
-class main extends StatelessWidget {
-  main({
+class myApp extends StatelessWidget {
+  myApp({
     Key key,
   }) : super(key: key);
   @override
