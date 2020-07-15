@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/blend_mask.dart';
 import 'package:adobe_xd/page_link.dart';
-import './Manu.dart';
-import './map_modelo.dart';
+import 'Manu.dart';
+import 'MapModel.dart';
 
-class map extends StatelessWidget {
-  map({
+class Map extends StatelessWidget {
+  Map({
     Key key,
   }) : super(key: key);
   @override
@@ -182,7 +182,7 @@ class map extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => map_modelo(),
+                  pageBuilder: () => MapModel(),
                 ),
               ],
               child: Container(
@@ -204,7 +204,7 @@ class map extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => map_modelo(),
+                  pageBuilder: () => MapModel(),
                 ),
               ],
               child: Container(
@@ -226,7 +226,7 @@ class map extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => map_modelo(),
+                  pageBuilder: () => MapModel(),
                 ),
               ],
               child: Container(

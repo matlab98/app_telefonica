@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:adobe_xd/blend_mask.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:adobe_xd/page_link.dart';
-import './map.dart';
+import 'Map.dart';
 import './Tip.dart';
-import './login_people.dart';
-import './edit_people.dart';
+import './LoginPeople.dart';
+import './EditPeople.dart';
 
 class Manu extends StatelessWidget {
   Manu({
@@ -57,7 +56,7 @@ class Manu extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => map(),
+                  pageBuilder: () => Map(),
                 ),
               ],
               child:
@@ -127,7 +126,7 @@ class Manu extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => login_people(),
+                  pageBuilder: () => LoginPeople(),
                 ),
               ],
               child:
@@ -171,7 +170,7 @@ class Manu extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => edit_people(),
+                  pageBuilder: () => EditPeople(),
                 ),
               ],
               child:

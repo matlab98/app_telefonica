@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class credit extends StatelessWidget {
-  credit({
+class Credit extends StatelessWidget {
+  Credit({
     Key key,
   }) : super(key: key);
   @override

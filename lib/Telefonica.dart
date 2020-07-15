@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/page_link.dart';
-import './business.dart';
+import './Business.dart';
 
 class Telefonica extends StatelessWidget {
   Telefonica({
@@ -20,7 +20,7 @@ class Telefonica extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => business(),
+                  pageBuilder: () => Business(),
                 ),
               ],
               child: SizedBox(

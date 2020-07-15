@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:adobe_xd/blend_mask.dart';
 import 'package:adobe_xd/page_link.dart';
-import './business.dart';
-import './iPhone.dart';
+import './Business.dart';
+import 'Phone.dart';
 import './Componente11.dart';
 
-class advertisement extends StatelessWidget {
-  advertisement({
+class Advertisement extends StatelessWidget {
+  Advertisement({
     Key key,
   }) : super(key: key);
   @override
@@ -175,7 +174,7 @@ class advertisement extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => business(),
+                  pageBuilder: () => Business(),
                 ),
               ],
               child:
@@ -212,7 +211,7 @@ class advertisement extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => iPhone(),
+                  pageBuilder: () => Phone(),
                 ),
               ],
               child: SizedBox(

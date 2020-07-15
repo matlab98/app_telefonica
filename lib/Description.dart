@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:adobe_xd/blend_mask.dart';
 import 'package:adobe_xd/page_link.dart';
-import './iPhone.dart';
-import './register_business.dart';
+import 'Phone.dart';
+import './RegisterBusiness.dart';
 
 class Description extends StatelessWidget {
   Description({
@@ -228,7 +227,7 @@ class Description extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => iPhone(),
+                  pageBuilder: () => Phone(),
                 ),
               ],
               child: SizedBox(
@@ -261,7 +260,7 @@ class Description extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => register_business(),
+                  pageBuilder: () => RegisterBusiness(),
                 ),
               ],
               child: Container(

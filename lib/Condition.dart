@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:adobe_xd/blend_mask.dart';
 import 'package:adobe_xd/page_link.dart';
-import './register.dart';
+import './RegisterPeople.dart';
 
 class Condition extends StatelessWidget {
   Condition({
@@ -113,7 +112,7 @@ class Condition extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => register(),
+                  pageBuilder: () => RegisterPeople(),
                 ),
               ],
               child: SizedBox(
@@ -146,7 +145,7 @@ class Condition extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => register(),
+                  pageBuilder: () => RegisterPeople(),
                 ),
               ],
               child:

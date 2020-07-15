@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:adobe_xd/blend_mask.dart';
 import 'package:adobe_xd/page_link.dart';
-import './map_modelo.dart';
+import './MapModel.dart';
 
-class red extends StatelessWidget {
-  red({
+class Red extends StatelessWidget {
+  Red({
     Key key,
   }) : super(key: key);
   @override
@@ -21,7 +20,7 @@ class red extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => map_modelo(),
+                  pageBuilder: () => MapModel(),
                 ),
               ],
               child: Container(
