@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:adobe_xd/blend_mask.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:adobe_xd/page_link.dart';
-import 'Map.dart';
-import 'Tip.dart';
-import 'EditBusiness.dart';
-import 'Business.dart';
+import './MapInicial.dart';
+import './TipHealt.dart';
+import './LoginBusiness.dart';
+import './EditBusiness.dart';
+import './Business.dart';
 
 class Phone extends StatelessWidget {
   Phone({
@@ -51,7 +53,7 @@ class Phone extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => Map(),
+                  pageBuilder: () => MapInicial(),
                 ),
               ],
               child:
@@ -97,7 +99,7 @@ class Phone extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => Tip(),
+                  pageBuilder: () => TipHealt(),
                 ),
               ],
               child:
@@ -116,15 +118,25 @@ class Phone extends StatelessWidget {
           ),
           Transform.translate(
             offset: Offset(25.0, 724.0),
-            child:
-                // Adobe XD layer: 'ap2' (shape)
-                Container(
-              width: 71.0,
-              height: 68.0,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: const AssetImage(''),
-                  fit: BoxFit.fill,
+            child: PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => LoginBusiness(),
+                ),
+              ],
+              child:
+                  // Adobe XD layer: 'ap2' (shape)
+                  Container(
+                width: 71.0,
+                height: 68.0,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: const AssetImage(''),
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
             ),

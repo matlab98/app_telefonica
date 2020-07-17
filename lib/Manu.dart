@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:adobe_xd/blend_mask.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:adobe_xd/page_link.dart';
-import 'Map.dart';
-import './Tip.dart';
+import './MapInicial.dart';
+import './TipHealt.dart';
 import './LoginPeople.dart';
 import './EditPeople.dart';
 
@@ -56,7 +57,7 @@ class Manu extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => Map(),
+                  pageBuilder: () => MapInicial(),
                 ),
               ],
               child:
@@ -101,7 +102,7 @@ class Manu extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => Tip(),
+                  pageBuilder: () => TipHealt(),
                 ),
               ],
               child:

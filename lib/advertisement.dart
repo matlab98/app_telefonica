@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:adobe_xd/blend_mask.dart';
 import 'package:adobe_xd/page_link.dart';
 import './Business.dart';
-import 'Phone.dart';
-import './Componente11.dart';
+import './Phone.dart';
 
 class Advertisement extends StatelessWidget {
   Advertisement({
@@ -244,7 +244,20 @@ class Advertisement extends StatelessWidget {
           ),
           Transform.translate(
             offset: Offset(53.0, 620.0),
-            child: Componente11(),
+            child: Stack(
+              children: <Widget>[
+                Container(
+                  width: 13.0,
+                  height: 13.0,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.elliptical(6.5, 6.5)),
+                    color: const Color(0xffffffff),
+                    border:
+                        Border.all(width: 2.0, color: const Color(0xff707070)),
+                  ),
+                ),
+              ],
+            ),
           ),
           Transform.translate(
             offset: Offset(75.0, 600.0),

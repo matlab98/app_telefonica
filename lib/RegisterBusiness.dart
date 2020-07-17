@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:adobe_xd/blend_mask.dart';
 import 'package:adobe_xd/page_link.dart';
-import 'Conditionv.dart';
+import './Conditionv2.dart';
 import './MenuInicial.dart';
 import './Description.dart';
 
@@ -183,7 +184,7 @@ class RegisterBusiness extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => Conditionv(),
+                  pageBuilder: () => Conditionv2(),
                 ),
               ],
               child: Container(

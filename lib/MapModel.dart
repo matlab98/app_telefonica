@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/blend_mask.dart';
 import 'package:adobe_xd/page_link.dart';
-import 'Map.dart';
+import './MapInicial.dart';
 import './Blue.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import './Red.dart';
-import './Etc.dart';
+import './Anyway.dart';
 import './Green.dart';
 import './PeopleBusiness.dart';
 
@@ -332,7 +332,7 @@ class MapModel extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => Map(),
+                  pageBuilder: () => MapInicial(),
                 ),
               ],
               child:
@@ -398,7 +398,7 @@ class MapModel extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => Map(),
+                  pageBuilder: () => MapInicial(),
                 ),
               ],
               child: SvgPicture.string(
@@ -441,7 +441,7 @@ class MapModel extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => Etc(),
+                  pageBuilder: () => Anyway(),
                 ),
               ],
               child: SizedBox(
@@ -542,7 +542,7 @@ class MapModel extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => Etc(),
+                  pageBuilder: () => Anyway(),
                 ),
               ],
               child: Container(
