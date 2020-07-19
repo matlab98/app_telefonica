@@ -159,7 +159,7 @@ class Description extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(6.0),
                 image: DecorationImage(
-                  image: const AssetImage(''),
+                  image: const AssetImage('assets/images/mas.png'),
                   fit: BoxFit.fill,
                 ),
               ),
@@ -175,7 +175,7 @@ class Description extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(32.0),
                 image: DecorationImage(
-                  image: const AssetImage(''),
+                  image: const AssetImage('assets/images/carrr.png'),
                   fit: BoxFit.fill,
                 ),
               ),
@@ -190,7 +190,7 @@ class Description extends StatelessWidget {
               height: 56.0,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: const AssetImage(''),
+                  image: const AssetImage('assets/images/merrrrr.png'),
                   fit: BoxFit.fill,
                 ),
               ),

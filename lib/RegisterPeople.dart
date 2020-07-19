@@ -16,6 +16,23 @@ class RegisterPeople extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           Transform.translate(
+            offset: Offset(66.0, 121.0),
+            child: SizedBox(
+              width: 213.0,
+              height: 41.0,
+              child: Text(
+                'Nombre',
+                style: TextStyle(
+                  fontFamily: 'Segoe UI',
+                  fontSize: 30,
+                  color: const Color(0xffffffff),
+                  fontWeight: FontWeight.w300,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Transform.translate(
             offset: Offset(36.0, 105.0),
             child: Container(
               width: 296.0,
@@ -31,23 +48,6 @@ class RegisterPeople extends StatelessWidget {
                     blurRadius: 6,
                   ),
                 ],
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(66.0, 121.0),
-            child: SizedBox(
-              width: 213.0,
-              height: 41.0,
-              child: Text(
-                'Nombre',
-                style: TextStyle(
-                  fontFamily: 'Segoe UI',
-                  fontSize: 30,
-                  color: const Color(0xffffffff),
-                  fontWeight: FontWeight.w300,
-                ),
-                textAlign: TextAlign.left,
               ),
             ),
           ),

@@ -14,6 +14,19 @@ class TipHealt extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           Transform.translate(
+            offset: Offset(0.0, 0.0),
+            child: Container(
+              width: 1125.0,
+              height: 817.0,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: const AssetImage('assets/images/Imagen 19.png'),
+                  fit: BoxFit.fill,
+                ),
+              ),
+            ),
+          ),
+          Transform.translate(
             offset: Offset(37.0, 31.0),
             child: Container(
               width: 304.0,

@@ -14,6 +14,19 @@ class Conditionv2 extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           Transform.translate(
+            offset: Offset(0.0, 0.0),
+            child: Container(
+              width: 1125.0,
+              height: 817.0,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: const AssetImage('assets/images/Imagen 19.png'),
+                  fit: BoxFit.fill,
+                ),
+              ),
+            ),
+          ),
+          Transform.translate(
             offset: Offset(10.0, 234.0),
             child: Text(
               '',

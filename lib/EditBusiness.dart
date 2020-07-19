@@ -12,6 +12,19 @@ class EditBusiness extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           Transform.translate(
+            offset: Offset(0.0, 0.0),
+            child: Container(
+              width: 1125.0,
+              height: 817.0,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: const AssetImage('assets/images/Imagen 19.png'),
+                  fit: BoxFit.fill,
+                ),
+              ),
+            ),
+          ),
+          Transform.translate(
             offset: Offset(0.0, -46.0),
             child:
                 // Adobe XD layer: 'EditBusiness' (group)

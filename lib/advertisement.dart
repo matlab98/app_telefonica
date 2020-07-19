@@ -15,6 +15,19 @@ class Advertisement extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           Transform.translate(
+            offset: Offset(0.0, 0.0),
+            child: Container(
+              width: 1125.0,
+              height: 817.0,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: const AssetImage('assets/images/Imagen 19.png'),
+                  fit: BoxFit.fill,
+                ),
+              ),
+            ),
+          ),
+          Transform.translate(
             offset: Offset(52.5, 168.5),
             child: SizedBox(
               width: 270.0,

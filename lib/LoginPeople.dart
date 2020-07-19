@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/blend_mask.dart';
+import 'Manu.dart';
 
 class LoginPeople extends StatelessWidget {
   LoginPeople({
@@ -13,6 +14,19 @@ class LoginPeople extends StatelessWidget {
         children: <Widget>[
           Stack(
             children: <Widget>[
+              Transform.translate(
+                offset: Offset(0.0, 0.0),
+                child: Container(
+                  width: 1125.0,
+                  height: 817.0,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: const AssetImage('assets/images/Imagen 19.png'),
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                ),
+              ),
               Transform.translate(
                 offset: Offset(35.0, 103.0),
                 child: Container(
@@ -53,40 +67,52 @@ class LoginPeople extends StatelessWidget {
                   ),
                 ),
               ),
-              Transform.translate(
-                offset: Offset(55.0, 119.0),
-                child: SizedBox(
-                  width: 256.0,
-                  height: 41.0,
-                  child: Text(
-                    'Nombre',
-                    style: TextStyle(
-                      fontFamily: 'Segoe UI',
-                      fontSize: 30,
-                      color: const Color(0xffffffff),
-                      fontWeight: FontWeight.w300,
+              Positioned(
+                left: 35.0,
+                top: 103.0,
+                width: 305.0,
+                height: 73.0,
+              child: TextField(
+                textAlign: TextAlign.left,
+                style: TextStyle(fontFamily: 'Segoe UI',
+                  fontSize: 30,
+                  color: const Color(0xffffffff),
+                  fontWeight: FontWeight.w300,
+
+                ),
+                decoration: InputDecoration(
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(),
+                    borderRadius: BorderRadius.all(Radius.circular(20))
+                  ),
+                  border: OutlineInputBorder(),
+                  labelText: 'Nombre',
+                ),
+              ),
+              ),
+              Positioned(
+                left: 35.0,
+                top: 227.0,
+                width: 305.0,
+                height: 73.0,
+                child: TextField(
+                  textAlign: TextAlign.left,
+                  style: TextStyle(fontFamily: 'Segoe UI',
+                    fontSize: 30,
+                    color: const Color(0xffffffff),
+                    fontWeight: FontWeight.w300,
+
+                  ),
+                  decoration: InputDecoration(
+                    enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(),
+                        borderRadius: BorderRadius.all(Radius.circular(20))
                     ),
-                    textAlign: TextAlign.left,
+                    labelText: 'Contraseña',
                   ),
                 ),
               ),
-              Transform.translate(
-                offset: Offset(55.0, 234.0),
-                child: SizedBox(
-                  width: 234.0,
-                  height: 59.0,
-                  child: Text(
-                    'Contraseña',
-                    style: TextStyle(
-                      fontFamily: 'Segoe UI',
-                      fontSize: 30,
-                      color: const Color(0xffffffff),
-                      fontWeight: FontWeight.w300,
-                    ),
-                    textAlign: TextAlign.left,
-                  ),
-                ),
-              ),
+
               Transform.translate(
                 offset: Offset(55.0, 379.0),
                 child: SizedBox(
@@ -147,28 +173,37 @@ class LoginPeople extends StatelessWidget {
                   ),
                 ),
               ),
-              Transform.translate(
-                offset: Offset(106.5, 406.5),
-                child: SizedBox(
-                  width: 150.0,
-                  height: 40.0,
-                  child: Text(
+              const SizedBox(height: 30),
+              Positioned(
+                left: 98.0,
+                top: 393.0,
+                width: 167.0,
+                height: 73.0,
+
+              child: RaisedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Manu()),
+                  );
+                },
+
+                child: const Text(
                     'Continuar',
-                    style: TextStyle(
-                      fontFamily: 'Segoe UI',
-                      fontSize: 30,
-                      color: const Color(0xff1c4b4b),
-                      shadows: [
-                        Shadow(
-                          color: const Color(0x29000000),
-                          offset: Offset(0, 10),
-                          blurRadius: 6,
-                        )
-                      ],
-                    ),
-                    textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontFamily: 'Segoe UI',
+                    fontSize: 30,
+                    color: const Color(0xff1c4b4b),
+                    shadows: [
+                      Shadow(
+                        color: const Color(0x29000000),
+                        offset: Offset(0, 10),
+                        blurRadius: 6,
+                      )
+                    ],
                   ),
                 ),
+              ),
               ),
               Transform.translate(
                 offset: Offset(35.5, 317.5),

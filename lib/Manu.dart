@@ -18,6 +18,19 @@ class Manu extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           Transform.translate(
+            offset: Offset(0.0, 0.0),
+            child: Container(
+              width: 1125.0,
+              height: 817.0,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: const AssetImage('assets/images/Imagen 19.png'),
+                  fit: BoxFit.fill,
+                ),
+              ),
+            ),
+          ),
+          Transform.translate(
             offset: Offset(113.0, 52.0),
             child: Text(
               '',
@@ -67,7 +80,7 @@ class Manu extends StatelessWidget {
                 height: 99.0,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: const AssetImage(''),
+                    image: const AssetImage('assets/images/Imagen4.png'),
                     fit: BoxFit.fill,
                   ),
                   boxShadow: [
@@ -112,7 +125,7 @@ class Manu extends StatelessWidget {
                 height: 103.0,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: const AssetImage(''),
+                    image: const AssetImage('assets/images/Imagen5.png'),
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -137,7 +150,7 @@ class Manu extends StatelessWidget {
                 height: 68.0,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: const AssetImage(''),
+                    image: const AssetImage('assets/images/ap2.png'),
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -181,7 +194,7 @@ class Manu extends StatelessWidget {
                 height: 94.0,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: const AssetImage(''),
+                    image: const AssetImage('assets/images/Imagen2.png'),
                     fit: BoxFit.fill,
                   ),
                 ),

@@ -1,3 +1,4 @@
+import 'package:app_telefonica/LoginBusiness.dart';
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/page_link.dart';
 import 'LoginPeople.dart';
@@ -19,7 +20,6 @@ class MyApp extends StatelessWidget {
       ),
       home: MyHomePage(title: 'Inicio'),
     );
-
   }
 }
 
@@ -40,30 +40,75 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Stack(
         children: <Widget>[
           Transform.translate(
-            offset: Offset(59.0, 445.0),
+            offset: Offset(0.0, 0.0),
             child: Container(
-              width: 257.0,
-              height: 81.0,
+              width: 1125.0,
+              height: 817.0,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20.0),
-                color: const Color(0xff42d294),
-                border: Border.all(width: 1.0, color: const Color(0xffffffff)),
-                boxShadow: [
-                  BoxShadow(
-                    color: const Color(0x290750a4),
-                    offset: Offset(0, 10),
-                    blurRadius: 3,
-                  ),
-                ],
+                image: DecorationImage(
+                  image: const AssetImage('assets/images/Imagen 19.png'),
+                  fit: BoxFit.fill,
+                ),
               ),
             ),
           ),
           Transform.translate(
-            offset: Offset(62.0, 445.0),
-            child: SizedBox(
-              width: 244.0,
-              height: 81.0,
-              child: Text(
+            offset: Offset(42, 137),
+            child: Container(
+              width: 268.0,
+              height: 110.0,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: const AssetImage('assets/images/Imagen 30.png'),
+                  fit: BoxFit.fill,
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            left: 59.0,
+            top: 333.0,
+            width: 257.0,
+            height: 81.0,
+            child: RaisedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LoginPeople()),
+                );
+              },
+              child: const Text(
+                'Ingresar',
+                style: TextStyle(
+                  fontFamily: 'Segoe UI',
+                  fontSize: 30,
+                  color: const Color(0xfff9f4f4),
+                  shadows: [
+                    Shadow(
+                      color: const Color(0x29000000),
+                      offset: Offset(0, 3),
+                      blurRadius: 6,
+                    )
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            left: 59.0,
+            top: 441.0,
+            width: 257.0,
+            height: 81.0,
+
+            child: RaisedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LoginBusiness()),
+                );
+              },
+
+              child: const Text(
                 'Ingresar como negocio',
                 style: TextStyle(
                   fontFamily: 'Segoe UI',
@@ -77,79 +122,10 @@ class _MyHomePageState extends State<MyHomePage> {
                     )
                   ],
                 ),
-                textAlign: TextAlign.center,
               ),
             ),
           ),
-          Transform.translate(
-            offset: Offset(122.5, 130.5),
-            child: SizedBox(
-              width: 25.0,
-              height: 25.0,
-              child: Text(
-                '',
-                style: TextStyle(
-                  fontFamily: 'Segoe UI',
-                  fontSize: 30,
-                  color: const Color(0xff533f3f),
-                ),
-                textAlign: TextAlign.left,
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(59.0, 337.0),
-            child: PageLink(
-              links: [
-                PageLinkInfo(
-                  transition: LinkTransition.Fade,
-                  ease: Curves.easeOut,
-                  duration: 0.3,
-                  pageBuilder: () => LoginPeople(),
-                ),
-              ],
-              child: Container(
-                width: 257.0,
-                height: 81.0,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20.0),
-                  color: const Color(0xff42d294),
-                  border:
-                  Border.all(width: 1.0, color: const Color(0xffffffff)),
-                  boxShadow: [
-                    BoxShadow(
-                      color: const Color(0x290750a4),
-                      offset: Offset(0, 10),
-                      blurRadius: 3,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(66.0, 353.0),
-            child: SizedBox(
-              width: 244.0,
-              height: 53.0,
-              child: Text(
-                'Ingresar ',
-                style: TextStyle(
-                  fontFamily: 'Segoe UI',
-                  fontSize: 30,
-                  color: const Color(0xfff9f4f4),
-                  shadows: [
-                    Shadow(
-                      color: const Color(0x29000000),
-                      offset: Offset(0, 3),
-                      blurRadius: 6,
-                    )
-                  ],
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ),
-          ),
+
           Transform.translate(
             offset: Offset(24.0, 551.0),
             child: PageLink(
@@ -196,19 +172,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: const Color(0xfff9f4f4),
                 ),
                 textAlign: TextAlign.center,
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(42.0, 141.0),
-            child: Container(
-              width: 1125.0,
-              height: 817.0,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: const AssetImage('assets/images/Imagen 19.png'),
-                  fit: BoxFit.fill,
-                ),
               ),
             ),
           ),

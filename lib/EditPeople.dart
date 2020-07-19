@@ -13,17 +13,14 @@ class EditPeople extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           Transform.translate(
-            offset: Offset(-227.0, -12.0),
+            offset: Offset(0.0, 0.0),
             child: Container(
-              width: 1237.0,
-              height: 824.0,
+              width: 1125.0,
+              height: 817.0,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(1.0),
                 image: DecorationImage(
-                  image: const AssetImage(''),
+                  image: const AssetImage('assets/images/Imagen 19.png'),
                   fit: BoxFit.fill,
-                  colorFilter: new ColorFilter.mode(
-                      Colors.black.withOpacity(0.77), BlendMode.dstIn),
                 ),
               ),
             ),
