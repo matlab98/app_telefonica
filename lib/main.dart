@@ -71,6 +71,11 @@ class _MyHomePageState extends State<MyHomePage> {
             width: 257.0,
             height: 81.0,
             child: RaisedButton(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20.0),
+                  side: BorderSide(color: const Color(0xff42d294) )
+              ),
+              color: const Color(0xff42d294),
               onPressed: () {
                 Navigator.push(
                   context,
@@ -101,6 +106,11 @@ class _MyHomePageState extends State<MyHomePage> {
             height: 81.0,
 
             child: RaisedButton(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20.0),
+                  side: BorderSide(color: const Color(0xff42d294) )
+              ),
+              color: const Color(0xff42d294),
               onPressed: () {
                 Navigator.push(
                   context,

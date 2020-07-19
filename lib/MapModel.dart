@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/blend_mask.dart';
 import 'package:adobe_xd/page_link.dart';
-import './MapInicial.dart';
+import './Search.dart';
 import './Blue.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import './Red.dart';
@@ -332,7 +332,7 @@ class MapModel extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => MapInicial(),
+                  pageBuilder: () => Search(),
                 ),
               ],
               child:
@@ -398,7 +398,7 @@ class MapModel extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => MapInicial(),
+                  pageBuilder: () => Search(),
                 ),
               ],
               child: SvgPicture.string(

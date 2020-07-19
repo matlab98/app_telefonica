@@ -27,46 +27,7 @@ class LoginPeople extends StatelessWidget {
                   ),
                 ),
               ),
-              Transform.translate(
-                offset: Offset(35.0, 103.0),
-                child: Container(
-                  width: 305.0,
-                  height: 73.0,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20.0),
-                    color: const Color(0xff42d294),
-                    border:
-                        Border.all(width: 1.0, color: const Color(0xffffffff)),
-                    boxShadow: [
-                      BoxShadow(
-                        color: const Color(0x29000000),
-                        offset: Offset(0, 10),
-                        blurRadius: 6,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Transform.translate(
-                offset: Offset(35.0, 227.0),
-                child: Container(
-                  width: 305.0,
-                  height: 73.0,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20.0),
-                    color: const Color(0xff42d294),
-                    border:
-                        Border.all(width: 1.0, color: const Color(0xffffffff)),
-                    boxShadow: [
-                      BoxShadow(
-                        color: const Color(0x29000000),
-                        offset: Offset(0, 10),
-                        blurRadius: 6,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
+
               Positioned(
                 left: 35.0,
                 top: 103.0,
@@ -76,16 +37,19 @@ class LoginPeople extends StatelessWidget {
                 textAlign: TextAlign.left,
                 style: TextStyle(fontFamily: 'Segoe UI',
                   fontSize: 30,
-                  color: const Color(0xffffffff),
+                  color: const Color(0xff42d294),
                   fontWeight: FontWeight.w300,
+
 
                 ),
                 decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(),
+                    borderSide: BorderSide.none,
                     borderRadius: BorderRadius.all(Radius.circular(20))
                   ),
                   border: OutlineInputBorder(),
+                  filled: true,
+                  fillColor: const Color(0xff42d294),
                   labelText: 'Nombre',
                 ),
               ),
@@ -99,33 +63,18 @@ class LoginPeople extends StatelessWidget {
                   textAlign: TextAlign.left,
                   style: TextStyle(fontFamily: 'Segoe UI',
                     fontSize: 30,
-                    color: const Color(0xffffffff),
+                    color: const Color(0xff42d294),
                     fontWeight: FontWeight.w300,
 
                   ),
                   decoration: InputDecoration(
                     enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(),
+                        borderSide: BorderSide.none,
                         borderRadius: BorderRadius.all(Radius.circular(20))
                     ),
+                    filled: true,
+                    fillColor: const Color(0xff42d294),
                     labelText: 'Contraseña',
-                  ),
-                ),
-              ),
-
-              Transform.translate(
-                offset: Offset(55.0, 379.0),
-                child: SizedBox(
-                  width: 128.0,
-                  height: 27.0,
-                  child: Text(
-                    '',
-                    style: TextStyle(
-                      fontFamily: 'Segoe UI',
-                      fontSize: 30,
-                      color: const Color(0xff3fbecc),
-                    ),
-                    textAlign: TextAlign.left,
                   ),
                 ),
               ),
@@ -160,19 +109,7 @@ class LoginPeople extends StatelessWidget {
                   ),
                 ),
               ),
-              Transform.translate(
-                offset: Offset(98.0, 393.0),
-                child: Container(
-                  width: 167.0,
-                  height: 73.0,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10.0),
-                    color: const Color(0xff10c085),
-                    border:
-                        Border.all(width: 1.0, color: const Color(0xff707070)),
-                  ),
-                ),
-              ),
+
               const SizedBox(height: 30),
               Positioned(
                 left: 98.0,
@@ -181,6 +118,11 @@ class LoginPeople extends StatelessWidget {
                 height: 73.0,
 
               child: RaisedButton(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20.0),
+                    side: BorderSide(color: const Color(0xff42d294) )
+                ),
+                color: const Color(0xff42d294),
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -194,6 +136,8 @@ class LoginPeople extends StatelessWidget {
                     fontFamily: 'Segoe UI',
                     fontSize: 30,
                     color: const Color(0xff1c4b4b),
+
+
                     shadows: [
                       Shadow(
                         color: const Color(0x29000000),
