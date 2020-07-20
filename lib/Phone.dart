@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:adobe_xd/blend_mask.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:adobe_xd/page_link.dart';
-import './Search.dart';
+import './search.dart';
 import './TipHealt.dart';
 import './LoginBusiness.dart';
 import './EditBusiness.dart';

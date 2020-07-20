@@ -5,6 +5,7 @@ INJECTED from /Users/hilbrakaku/Desktop/app_telefonica/android/app/src/main/Andr
 INJECTED from /Users/hilbrakaku/Desktop/app_telefonica/android/app/src/main/AndroidManifest.xml:1:1-50:12
 INJECTED from /Users/hilbrakaku/Desktop/app_telefonica/android/app/src/main/AndroidManifest.xml:1:1-50:12
 MERGED from /Users/hilbrakaku/Desktop/app_telefonica/android/app/src/main/AndroidManifest.xml:1:1-50:12
+MERGED from [:permission] /Users/hilbrakaku/Desktop/app_telefonica/build/permission/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:geolocator] /Users/hilbrakaku/Desktop/app_telefonica/build/geolocator/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:location_permissions] /Users/hilbrakaku/Desktop/app_telefonica/build/location_permissions/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:url_launcher] /Users/hilbrakaku/Desktop/app_telefonica/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
@@ -134,6 +135,8 @@ uses-sdk
 INJECTED from /Users/hilbrakaku/Desktop/app_telefonica/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/hilbrakaku/Desktop/app_telefonica/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/hilbrakaku/Desktop/app_telefonica/android/app/src/main/AndroidManifest.xml
+MERGED from [:permission] /Users/hilbrakaku/Desktop/app_telefonica/build/permission/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:permission] /Users/hilbrakaku/Desktop/app_telefonica/build/permission/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:geolocator] /Users/hilbrakaku/Desktop/app_telefonica/build/geolocator/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:geolocator] /Users/hilbrakaku/Desktop/app_telefonica/build/geolocator/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:location_permissions] /Users/hilbrakaku/Desktop/app_telefonica/build/location_permissions/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44

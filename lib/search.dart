@@ -9,30 +9,14 @@ import 'package:app_telefonica/models/place.dart';
 import 'package:google_map_polyline/google_map_polyline.dart';
 import 'package:permission/permission.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+class Search extends StatelessWidget {
+  Search({
+    Key key,
+  }) : super(key: key);
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Search(),
-    );
-  }
-}
-
-class Search extends StatefulWidget {
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<Search> {
   GoogleMapController mapController;
-
   String searchAddr;
   final Set<Polyline> polyline = {};
-
   GoogleMapController _controller;
   List<LatLng> routeCoords;
   GoogleMapPolyline googleMapPolyline =
@@ -53,16 +37,9 @@ class _MyHomePageState extends State<Search> {
   }
   @override
   Widget build(BuildContext context) {
-    final currentPosition = Provider.of<Position>(context);
-    final placesProvider = Provider.of<Future<List<Place>>>(context);
-    final geoService = GeoLocatorService();
-    final markerService = MarkerService();
-    var markers;
     return Scaffold(
-
         body: Stack(
           children: <Widget>[
-
             GoogleMap(
               initialCameraPosition: CameraPosition(
                   target: LatLng(4,
@@ -118,4 +95,7 @@ class _MyHomePageState extends State<Search> {
       mapController = controller;
     });
   }
+
+  void setState(Null Function() param0) {}
 }
+

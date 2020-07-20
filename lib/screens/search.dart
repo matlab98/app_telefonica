@@ -1,15 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:geolocator/geolocator.dart';
-import 'package:app_telefonica/services/geolocator_service.dart';
-import 'package:app_telefonica/services/marker_service.dart';
-import 'package:provider/provider.dart';
-import 'package:url_launcher/url_launcher.dart';
-import '../models/place.dart';
 import 'package:google_map_polyline/google_map_polyline.dart';
 import 'package:permission/permission.dart';
-
-void main() => runApp(MyApp());
+import 'package:geolocator/geolocator.dart';
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -53,11 +46,6 @@ class _MyHomePageState extends State<Search> {
   }
   @override
   Widget build(BuildContext context) {
-    final currentPosition = Provider.of<Position>(context);
-    final placesProvider = Provider.of<Future<List<Place>>>(context);
-    final geoService = GeoLocatorService();
-    final markerService = MarkerService();
-    var markers;
     return Scaffold(
 
         body: Stack(
